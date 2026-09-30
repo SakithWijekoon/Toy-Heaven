@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+		<meta content="#ffd92f" name="theme-color"/>
+		<meta content="Toy Haven" name="author"/>
+		<link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+		<link href="manifest.json" rel="manifest"/>
+		<link href="css/common.css" rel="stylesheet"/>
+		<link href="css/support.css" rel="stylesheet"/>
+		<meta content="Toy Haven playful online toy store." name="description"/>
+		<title>Support & Feedback | Toy Haven</title>
+	</head>
+	<body>
+		<header class="site-header">
+			<div class="container nav">
+				<a class="logo" href="index.html">
+					<span class="logo-mark">TH</span>
+					<span>
+						Toy
+						<span>Haven</span>
+					</span>
+				</a>
+				<button aria-expanded="false" aria-label="Open menu" class="hamburger">
+					<i>
+					</i>
+					<i>
+					</i>
+					<i>
+					</i>
+				</button>
+				<nav aria-label="Main navigation" class="nav-links">
+					<a href="index.html">Home</a>
+					<a href="products.html">Products</a>
+					<a href="wishlist.html">
+						Collection
+						<b class="nav-badge" data-wishlist-count="">0</b>
+					</a>
+					<a href="cart.html">
+						Cart
+						<b class="nav-badge" data-cart-count="">0</b>
+					</a>
+					<a href="support.html">Support</a>
+					<span class="nav-divider">
+					</span>
+					<a class="nav-login" href="signup.html">Sign up</a>
+					<a class="nav-register" href="register.html">Register</a>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<section class="page-heading">
+				<div class="container">
+					<span class="kicker">HELP CENTRE</span>
+					<h1>Questions? We've got you.</h1>
+					<p>Find quick answers or send us your feedback.</p>
+				</div>
+			</section>
+			<section class="section">
+				<div class="container support-grid">
+					<div>
+						<div class="section-title left">
+							<span class="kicker">FAQ</span>
+							<h2>Frequently asked questions</h2>
+						</div>
+						<div class="faq-list">
+							<article>
+								<button aria-expanded="false" class="faq-question">
+									Does my cart stay saved?
+									<span>+</span>
+								</button>
+								<div class="faq-answer">
+									<p>Yes. Cart items are stored in localStorage in your browser.</p>
+								</div>
+							</article>
+							<article>
+								<button aria-expanded="false" class="faq-question">
+									How does My Collection work?
+									<span>+</span>
+								</button>
+								<div class="faq-answer">
+									<p>Save any product with the heart icon, then choose Interested, Owned or Not Interested.</p>
+								</div>
+							</article>
+							<article>
+								<button aria-expanded="false" class="faq-question">
+									Is payment real?
+									<span>+</span>
+								</button>
+								<div class="faq-answer">
+									<p>No. Checkout is a front-end simulation created for the assignment. No real payment is processed.</p>
+								</div>
+							</article>
+							<article>
+								<button aria-expanded="false" class="faq-question">
+									Where is my information stored?
+									<span>+</span>
+								</button>
+								<div class="faq-answer">
+									<p>Newsletter emails, feedback, cart data, collection choices and order history are stored locally using localStorage.</p>
+								</div>
+							</article>
+						</div>
+					</div>
+					<div class="form-card" id="feedback">
+						<span class="kicker">FEEDBACK</span>
+						<h2>Tell us what you think.</h2>
+						<p class="muted">Your message is saved locally for this front-end project.</p>
+						<form id="feedback-form" novalidate="">
+							<div class="field">
+								<label for="feedback-name">Name</label>
+								<input id="feedback-name" name="name" required=""/>
+								<small class="field-error">
+								</small>
+							</div>
+							<div class="field">
+								<label for="feedback-email">Email</label>
+								<input id="feedback-email" name="email" required="" type="email"/>
+								<small class="field-error">
+								</small>
+							</div>
+							<div class="field">
+								<label for="feedback-message">Message</label>
+								<textarea id="feedback-message" minlength="10" name="message" required="" rows="6"></textarea>
+								<small class="field-error">
+								</small>
+							</div>
+							<button class="yellow-btn wide" type="submit">Send Feedback 🚀</button>
+							<p class="form-message" id="feedback-success" role="status">
+							</p>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+		<section class="quick-actions">
+			<div class="container quick-inner">
+				<div>
+					<span class="mini-label">QUICK ACTIONS</span>
+					<strong>Ready to find something fun?</strong>
+				</div>
+				<div class="quick-buttons">
+					<a class="quick-btn yellow" href="products.html">Shop Now →</a>
+					<a class="quick-btn dark" href="support.html">Support</a>
+					<a class="quick-btn outline" href="support.html#feedback">Feedback</a>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="container footer-top">
+				<div>
+					<a class="logo footer-logo" href="index.html">
+						<span class="logo-mark">TH</span>
+						<span>
+							Toy
+							<span>Haven</span>
+						</span>
+					</a>
+					<p>Made for play. Crafted for curious kids.</p>
+				</div>
+				<div>
+					<h3>Explore</h3>
+					<a href="products.html">All Products</a>
+					<a href="wishlist.html">My Collection</a>
+					<a href="cart.html">Shopping Cart</a>
+				</div>
+				<div>
+					<h3>Help</h3>
+					<a href="support.html">FAQs</a>
+					<a href="support.html#feedback">Feedback</a>
+					<a href="checkout.html">Checkout</a>
+				</div>
+				<div>
+					<h3>Stay playful</h3>
+					<p class="small">Get new toy drops and fun updates.</p>
+					<form class="footer-form" id="footer-newsletter">
+						<input aria-label="Email for newsletter" placeholder="Email address" required="" type="email"/>
+						<button>Join</button>
+					</form>
+					<p class="footer-message" id="footer-message" role="status">
+					</p>
+				</div>
+			</div>
+			<div class="container footer-bottom">
+				<span>© 2026 Toy Haven</span>
+				<span>HTML • CSS • JavaScript • PWA</span>
+			</div>
+		</footer>
+		<script src="js/products.js">
+		</script>
+		<script src="js/app.js">
+		</script>
+	</body>
+</html>

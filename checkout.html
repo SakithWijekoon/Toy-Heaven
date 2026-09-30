@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+		<meta content="#ffd92f" name="theme-color"/>
+		<meta content="Toy Haven" name="author"/>
+		<link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+		<link href="manifest.json" rel="manifest"/>
+		<link href="css/common.css" rel="stylesheet"/>
+		<link href="css/checkout.css" rel="stylesheet"/>
+		<meta content="Toy Haven playful online toy store." name="description"/>
+		<title>Checkout | Toy Haven</title>
+	</head>
+	<body>
+		<header class="site-header">
+			<div class="container nav">
+				<a class="logo" href="index.html">
+					<span class="logo-mark">TH</span>
+					<span>
+						Toy
+						<span>Haven</span>
+					</span>
+				</a>
+				<button aria-expanded="false" aria-label="Open menu" class="hamburger">
+					<i>
+					</i>
+					<i>
+					</i>
+					<i>
+					</i>
+				</button>
+				<nav aria-label="Main navigation" class="nav-links">
+					<a href="index.html">Home</a>
+					<a href="products.html">Products</a>
+					<a href="wishlist.html">
+						Collection
+						<b class="nav-badge" data-wishlist-count="">0</b>
+					</a>
+					<a href="cart.html">
+						Cart
+						<b class="nav-badge" data-cart-count="">0</b>
+					</a>
+					<a href="support.html">Support</a>
+					<span class="nav-divider">
+					</span>
+					<a class="nav-login" href="signup.html">Sign up</a>
+					<a class="nav-register" href="register.html">Register</a>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<section class="page-heading">
+				<div class="container">
+					<span class="kicker">CHECKOUT</span>
+					<h1>Almost ready!</h1>
+					<p>Enter your delivery details and confirm your order.</p>
+				</div>
+			</section>
+			<section class="section">
+				<div class="container">
+					<div class="empty hidden" id="checkout-empty">
+						<span>🛒</span>
+						<h2>Nothing to checkout.</h2>
+						<a class="yellow-btn" href="products.html">Shop Now →</a>
+					</div>
+					<div class="checkout-layout" id="checkout-layout">
+						<form class="form-card" id="checkout-form" novalidate="">
+							<span class="kicker">YOUR DETAILS</span>
+							<h2>Delivery information</h2>
+							<div class="field">
+								<label for="full-name">Full Name</label>
+								<input autocomplete="name" id="full-name" name="fullName" required=""/>
+								<small class="field-error">
+								</small>
+							</div>
+							<div class="field">
+								<label for="email">Email</label>
+								<input autocomplete="email" id="email" name="email" required="" type="email"/>
+								<small class="field-error">
+								</small>
+							</div>
+							<div class="field">
+								<label for="address">Delivery Address</label>
+								<textarea id="address" name="address" required="" rows="4"></textarea>
+								<small class="field-error">
+								</small>
+							</div>
+							<fieldset>
+								<legend>Payment method</legend>
+								<label class="pay-option">
+									<input checked="" name="payment" type="radio" value="Card"/>
+									💳 Card
+								</label>
+								<label class="pay-option">
+									<input name="payment" type="radio" value="Cash on Delivery"/>
+									💵 Cash on Delivery
+								</label>
+							</fieldset>
+							<button class="yellow-btn wide" type="submit">Confirm Order ✨</button>
+							<p class="form-message" id="checkout-message" role="status">
+							</p>
+						</form>
+						<aside class="summary" id="checkout-summary">
+						</aside>
+					</div>
+				</div>
+			</section>
+			<div aria-hidden="true" class="modal" id="success-modal">
+				<div class="backdrop">
+				</div>
+				<div class="success-box">
+					<div class="celebrate">🎉 ✨ 🎈</div>
+					<div class="success-check">✓</div>
+					<h2>Order confirmed!</h2>
+					<p>Your Toy Haven adventure is on its way.</p>
+					<a class="yellow-btn" href="index.html">Back Home</a>
+				</div>
+			</div>
+		</main>
+		<section class="quick-actions">
+			<div class="container quick-inner">
+				<div>
+					<span class="mini-label">QUICK ACTIONS</span>
+					<strong>Ready to find something fun?</strong>
+				</div>
+				<div class="quick-buttons">
+					<a class="quick-btn yellow" href="products.html">Shop Now →</a>
+					<a class="quick-btn dark" href="support.html">Support</a>
+					<a class="quick-btn outline" href="support.html#feedback">Feedback</a>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="container footer-top">
+				<div>
+					<a class="logo footer-logo" href="index.html">
+						<span class="logo-mark">TH</span>
+						<span>
+							Toy
+							<span>Haven</span>
+						</span>
+					</a>
+					<p>Made for play. Crafted for curious kids.</p>
+				</div>
+				<div>
+					<h3>Explore</h3>
+					<a href="products.html">All Products</a>
+					<a href="wishlist.html">My Collection</a>
+					<a href="cart.html">Shopping Cart</a>
+				</div>
+				<div>
+					<h3>Help</h3>
+					<a href="support.html">FAQs</a>
+					<a href="support.html#feedback">Feedback</a>
+					<a href="checkout.html">Checkout</a>
+				</div>
+				<div>
+					<h3>Stay playful</h3>
+					<p class="small">Get new toy drops and fun updates.</p>
+					<form class="footer-form" id="footer-newsletter">
+						<input aria-label="Email for newsletter" placeholder="Email address" required="" type="email"/>
+						<button>Join</button>
+					</form>
+					<p class="footer-message" id="footer-message" role="status">
+					</p>
+				</div>
+			</div>
+			<div class="container footer-bottom">
+				<span>© 2026 Toy Haven</span>
+				<span>HTML • CSS • JavaScript • PWA</span>
+			</div>
+		</footer>
+		<script src="js/products.js">
+		</script>
+		<script src="js/app.js">
+		</script>
+	</body>
+</html>

@@ -1,0 +1,65 @@
+.checkout-layout {
+	display:grid;
+	grid-template-columns:1.55fr .8fr;
+	gap:22px;
+	align-items:start;
+}
+.form-card {
+	background:#fff;
+	border:1px solid var(--line);
+	border-radius:13px;
+	padding:23px;
+}
+.form-card h2 {
+	font-size:1.8rem;
+	margin-top:3px;
+}
+.summary {
+	background:#fff;
+	border:1px solid var(--line);
+	border-radius:13px;
+	padding:23px;
+}
+.summary h2 {
+	font-size:1.8rem;
+}
+.sum-line,.sum-total {
+	display:flex;
+	justify-content:space-between;
+	gap:10px;
+	border-bottom:1px solid var(--line);
+	padding:12px 0;
+	font-size:.83rem;
+}
+.sum-total {
+	border:0;
+	font-size:1.15rem;
+	padding:18px 0;
+}
+.success-box {
+	text-align:center;
+	width:min(470px,100%);
+	padding:42px;
+}
+.success-check {
+	width:65px;
+	height:65px;
+	border-radius:50%;
+	background:#70d7a2;
+	display:grid;
+	place-items:center;
+	margin:auto;
+	font-size:2rem;
+	font-weight:900;
+}
+.celebrate {
+	font-size:1.8rem;
+}
+.success-box h2 {
+	margin-top:14px;
+}
+@media(max-width:900px) {
+	.checkout-layout {
+		grid-template-columns:1fr;
+	}
+}

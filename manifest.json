@@ -1,0 +1,4 @@
+{
+"name":"Toy Haven","short_name":"ToyHaven","description":"A playful toy and collectibles storefront.","start_url":"index.html","display":"standalone","background_color":"#fffdf6","theme_color":"#ffd92f",
+"icons":[{"src":"assets/favicon.svg","sizes":"any","type":"image/svg+xml"}]
+}

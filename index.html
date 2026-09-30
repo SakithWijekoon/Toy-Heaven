@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+		<meta content="#ffd92f" name="theme-color"/>
+		<meta content="Toy Haven" name="author"/>
+		<link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+		<link href="manifest.json" rel="manifest"/>
+		<link href="css/common.css" rel="stylesheet"/>
+		<link href="css/hero.css" rel="stylesheet"/>
+		<meta content="Toy Haven playful online toy store." name="description"/>
+		<title>Play Starts Here | Toy Haven</title>
+	</head>
+	<body>
+		<header class="site-header">
+			<div class="container nav">
+				<a class="logo" href="index.html">
+					<span class="logo-mark">TH</span>
+					<span>
+						Toy
+						<span>Haven</span>
+					</span>
+				</a>
+				<button aria-expanded="false" aria-label="Open menu" class="hamburger">
+					<i>
+					</i>
+					<i>
+					</i>
+					<i>
+					</i>
+				</button>
+				<nav aria-label="Main navigation" class="nav-links">
+					<a href="index.html">Home</a>
+					<a href="products.html">Products</a>
+					<a href="wishlist.html">
+						Collection
+						<b class="nav-badge" data-wishlist-count="">0</b>
+					</a>
+					<a href="cart.html">
+						Cart
+						<b class="nav-badge" data-cart-count="">0</b>
+					</a>
+					<a href="support.html">Support</a>
+					<span class="nav-divider">
+					</span>
+					<a class="nav-login" href="signup.html">Sign up</a>
+					<a class="nav-register" href="register.html">Register</a>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<section class="hero-wrap">
+				<div aria-label="Toy Haven promotions" class="hero-slider">
+					<article class="hero-slide active">
+						<div class="hero-text">
+							<span class="kicker">MADE FOR PLAY</span>
+							<h1>
+								Made for Play.
+								<br/>
+								<span>Crafted for Kids.</span>
+							</h1>
+							<p>Discover colourful toys, figures, board games and diecast cars for curious minds.</p>
+							<a class="yellow-btn" href="products.html">
+								Shop Now
+								<span>→</span>
+							</a>
+						</div>
+						<img alt="Children playing with colourful toys" src="assets/hero-toys.svg"/>
+					</article>
+					<article class="hero-slide">
+						<div class="hero-text">
+							<span class="kicker red">COLLECT • DISPLAY • PLAY</span>
+							<h1>
+								Small figures.
+								<br/>
+								<span>Big stories.</span>
+							</h1>
+							<p>Bring heroes, robots and imaginative characters into your collection.</p>
+							<a class="yellow-btn" href="products.html?category=Figurines">Shop Figurines →</a>
+						</div>
+						<img alt="Colourful collectible figurines" src="assets/hero-figurines.svg"/>
+					</article>
+					<article class="hero-slide">
+						<div class="hero-text">
+							<span class="kicker green">PLAY TOGETHER</span>
+							<h1>
+								Game night
+								<br/>
+								<span>starts here.</span>
+							</h1>
+							<p>Choose a board game, gather your crew and make an ordinary day memorable.</p>
+							<a class="yellow-btn" href="products.html?category=Board Games">Shop Games →</a>
+						</div>
+						<img alt="Colourful board game" src="assets/hero-games.svg"/>
+					</article>
+					<article class="hero-slide">
+						<div class="hero-text">
+							<span class="kicker red">MINI MACHINES</span>
+							<h1>
+								Little cars.
+								<br/>
+								<span>Big dreams.</span>
+							</h1>
+							<p>Collect classic, sporty and colourful diecast rides for your shelf.</p>
+							<a class="yellow-btn" href="products.html?category=Diecast Cars">Shop Cars →</a>
+						</div>
+						<img alt="Red diecast model car" src="assets/hero-cars.svg"/>
+					</article>
+					<div class="slider-controls">
+						<button aria-label="Previous slide" class="slide-arrow prev">←</button>
+						<div class="slider-dots">
+						</div>
+						<button aria-label="Next slide" class="slide-arrow next">→</button>
+					</div>
+				</div>
+			</section>
+			<section class="section">
+				<div class="container">
+					<div class="section-title">
+						<span class="kicker">BESTSELLERS</span>
+						<h2>Our favourites</h2>
+						<p>Little picks that bring a lot of fun.</p>
+					</div>
+					<div class="product-grid four" id="home-products">
+					</div>
+				</div>
+			</section>
+			<section class="section featured-section">
+				<div class="container">
+					<div class="section-title">
+						<span class="kicker">FEATURED TODAY</span>
+						<h2>Today's little star.</h2>
+						<p>A playful pick chosen automatically for today.</p>
+					</div>
+					<div class="featured-product" id="featured-product">
+					</div>
+				</div>
+			</section>
+			<section class="section yellow-section">
+				<div class="container">
+					<div class="section-title">
+						<span class="kicker">SHOP BY CATEGORY</span>
+						<h2>Pick your playground.</h2>
+					</div>
+					<div class="category-grid">
+						<a href="products.html?category=Figurines">
+							<img alt="" src="assets/product-figurine.svg"/>
+							<strong>Figurines</strong>
+							<span>Heroes & characters →</span>
+						</a>
+						<a href="products.html?category=Toys">
+							<img alt="" src="assets/product-toy.svg"/>
+							<strong>Toys</strong>
+							<span>Classic playtime →</span>
+						</a>
+						<a href="products.html?category=Board Games">
+							<img alt="" src="assets/product-game.svg"/>
+							<strong>Board Games</strong>
+							<span>Play together →</span>
+						</a>
+						<a href="products.html?category=Diecast Cars">
+							<img alt="" src="assets/product-car.svg"/>
+							<strong>Diecast Cars</strong>
+							<span>Mini rides →</span>
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="newsletter-section">
+				<div class="container newsletter">
+					<img alt="" aria-hidden="true" src="assets/hero-toys.svg"/>
+					<div>
+						<span class="kicker">JOIN OUR NEWSLETTER</span>
+						<h2>Keep the fun coming.</h2>
+						<p>Get new toy drops and playful updates in your inbox.</p>
+						<form id="home-newsletter">
+							<input aria-label="Email address" placeholder="Your email address" required="" type="email"/>
+							<button class="yellow-btn">Sign me up</button>
+						</form>
+						<p class="form-message" id="home-newsletter-msg" role="status">
+						</p>
+					</div>
+				</div>
+			</section>
+		</main>
+		<section class="quick-actions">
+			<div class="container quick-inner">
+				<div>
+					<span class="mini-label">QUICK ACTIONS</span>
+					<strong>Ready to find something fun?</strong>
+				</div>
+				<div class="quick-buttons">
+					<a class="quick-btn yellow" href="products.html">Shop Now →</a>
+					<a class="quick-btn dark" href="support.html">Support</a>
+					<a class="quick-btn outline" href="support.html#feedback">Feedback</a>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="container footer-top">
+				<div>
+					<a class="logo footer-logo" href="index.html">
+						<span class="logo-mark">TH</span>
+						<span>
+							Toy
+							<span>Haven</span>
+						</span>
+					</a>
+					<p>Made for play. Crafted for curious kids.</p>
+				</div>
+				<div>
+					<h3>Explore</h3>
+					<a href="products.html">All Products</a>
+					<a href="wishlist.html">My Collection</a>
+					<a href="cart.html">Shopping Cart</a>
+				</div>
+				<div>
+					<h3>Help</h3>
+					<a href="support.html">FAQs</a>
+					<a href="support.html#feedback">Feedback</a>
+					<a href="checkout.html">Checkout</a>
+				</div>
+				<div>
+					<h3>Stay playful</h3>
+					<p class="small">Get new toy drops and fun updates.</p>
+					<form class="footer-form" id="footer-newsletter">
+						<input aria-label="Email for newsletter" placeholder="Email address" required="" type="email"/>
+						<button>Join</button>
+					</form>
+					<p class="footer-message" id="footer-message" role="status">
+					</p>
+				</div>
+			</div>
+			<div class="container footer-bottom">
+				<span>© 2026 Toy Haven</span>
+				<span>HTML • CSS • JavaScript • PWA</span>
+			</div>
+		</footer>
+		<script src="js/products.js">
+		</script>
+		<script src="js/app.js">
+		</script>
+	</body>
+</html>

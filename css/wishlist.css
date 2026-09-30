@@ -1,0 +1,36 @@
+.collection-tabs {
+	display:flex;
+	gap:7px;
+	flex-wrap:wrap;
+	margin-bottom:22px;
+}
+.collection-tab {
+	border:1px solid var(--line);
+	background:#fff;
+	border-radius:7px;
+	padding:9px 13px;
+	font-weight:900;
+	font-size:.75rem;
+}
+.collection-tab.active {
+	background:var(--ink);
+	color:#fff;
+}
+.collection-item {
+	min-width:0;
+}
+.status-select {
+	display:block;
+	background:#fff;
+	border:1px solid var(--line);
+	border-radius:0 0 10px 10px;
+	padding:8px;
+	font-size:.7rem;
+	font-weight:900;
+}
+.status-select select {
+	margin-left:6px;
+	border:1px solid var(--line);
+	border-radius:5px;
+	padding:3px;
+}
