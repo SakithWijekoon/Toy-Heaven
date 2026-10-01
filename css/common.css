@@ -84,10 +84,10 @@ h3 {
 	margin-bottom:8px;
 }
 .kicker.red {
-	color:var(--red);
+	color:#ce382b;
 }
 .kicker.green {
-	color:var(--green);
+	color:#078359;
 }
 /* Shared navigation */ .site-header {
 	height:66px;
@@ -266,7 +266,7 @@ h3 {
 }
 .product-detail>span {
 	font-size:.65rem;
-	color:#979188;
+	color:var(--muted);
 	font-weight:900;
 	text-transform:uppercase;
 	letter-spacing:1px;
